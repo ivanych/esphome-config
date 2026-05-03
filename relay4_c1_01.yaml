@@ -4,4 +4,4 @@ substitutions:
 
 packages:
   devices: github://ivanych/esphome-devices/relay4_c1.yaml@2.0.0
-  #devices: !include esphome-devices/relay4_c1.yaml
+  #devices: !include ../esphome-devices/relay4_c1.yaml
