@@ -1,0 +1,7 @@
+substitutions:
+  <<: !include secrets.yaml
+  device_number: '02'
+
+packages:
+  devices: github://ivanych/esphome-devices/relay4_sp316.yaml@2.1.0
+  #devices: !include ../esphome-devices/relay4_sp316.yaml
