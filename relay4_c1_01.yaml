@@ -1,7 +1,13 @@
 substitutions:
   <<: !include secrets.yaml
-  device_number: '01'
+
+  device_number: "01"
+  device_author: "ivanych"
+  device_unit: "relay4"
+  device_board: "c1"
+  device_version: "3.0.0"
+  device_timezone: "Europe/Moscow"
 
 packages:
-  devices: github://ivanych/esphome-devices/relay4_c1.yaml@2.0.0
-  #devices: !include ../esphome-devices/relay4_c1.yaml
+  devices: github://ivanych/esphome-devices/${device_unit}_${device_board}.yaml@${device_version}
+  #devices: !include ../esphome-devices/${device_unit}_${device_board}.yaml
