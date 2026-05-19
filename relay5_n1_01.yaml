@@ -1,0 +1,13 @@
+substitutions:
+  <<: !include secrets.yaml
+
+  device_number: "01"
+  device_unit: "relay5"
+  device_board: "n1"
+  device_version: "4.0.0"
+  device_author: "ivanych"
+  device_timezone: "Europe/Moscow"
+
+packages:
+  devices: github://ivanych/esphome-devices/${device_unit}_${device_board}.yaml@${device_version}
+  #devices: !include ../esphome-devices/${device_unit}_${device_board}.yaml
