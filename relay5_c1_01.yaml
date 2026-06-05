@@ -4,7 +4,7 @@ substitutions:
   device_number: "01"
   device_unit: "relay5"
   device_board: "c1"
-  device_version: "4.0.0"
+  device_version: "5.0.0"
   device_author: "ivanych"
   device_timezone: "Europe/Moscow"
 
