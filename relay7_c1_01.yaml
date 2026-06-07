@@ -2,7 +2,7 @@ substitutions:
   <<: !include secrets.yaml
 
   device_number: "01"
-  device_unit: "relay5"
+  device_unit: "relay7"
   device_board: "c1"
   device_version: "5.0.1"
   device_author: "ivanych"
