@@ -1,0 +1,17 @@
+substitutions:
+  <<: !include secrets.yaml
+
+  device_number: "01"
+  device_unit: "lightdetector1"
+  device_board: "s1v1"
+  device_version: "5.1.0"
+  device_author: "ivanych"
+  device_timezone: "Europe/Moscow"
+
+packages:
+  devices:
+    url: https://github.com/ivanych/esphome-devices
+    files:
+      - ${device_unit}_${device_board}.yaml
+    ref: ${device_version}
+    #!include ../esphome-devices/${device_unit}_${device_board}.yaml
