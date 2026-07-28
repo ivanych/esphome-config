@@ -1,0 +1,17 @@
+substitutions:
+  <<: !include secrets.yaml
+
+  device_number: "01"
+  device_unit: "camera1"
+  device_board: "s1v2"
+  device_version: "6.0.0"
+  device_author: "ivanych"
+  device_timezone: "Europe/Moscow"
+
+packages:
+  devices:
+    url: https://github.com/ivanych/esphome-devices
+    ref: ${device_version}
+    files:
+      - ${device_unit}_${device_board}.yaml
+    #!include ../esphome-devices/${device_unit}_${device_board}.yaml
