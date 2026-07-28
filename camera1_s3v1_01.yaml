@@ -4,7 +4,7 @@ substitutions:
   device_number: "01"
   device_unit: "camera1"
   device_board: "s3v1"
-  device_version: "5.3.0"
+  device_version: "6.0.0"
   device_author: "ivanych"
   device_timezone: "Europe/Moscow"
 
